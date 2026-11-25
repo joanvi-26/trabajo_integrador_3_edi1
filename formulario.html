@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso al Sistema - Carpintería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Acceso Restringido</h1>
+    <p>Ingrese sus credenciales para acceder a la calculadora</p>
+  </header>
+
+  <nav>
+    <button id="botonMenu" aria-expanded="false" aria-controls="menu">Menú ☰</button>
+    <ul id="menu" hidden>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <form action="calculadora.html" method="get">
+      <fieldset>
+        <legend>Credenciales de Usuario</legend>
+        
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="facu.flowers666@gmail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" minlength="8" required placeholder="10100111">
+          <small>Mínimo 8 caracteres.</small>
+        </div>
+      </fieldset>
+
+      <button type="submit">Ingresar a la Calculadora</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>EDI I - 2026</p>
+  </footer>
+</body>
+</html>
